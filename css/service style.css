@@ -1,0 +1,236 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.working_process{
+  display: flex;
+  justify-content: space-between;
+  background-color: #1D1D24;
+  padding: 5vw 0;
+}
+.working_process_wrapper{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.working_process_text{
+  width: 80%;
+}
+.proces_heading_wrapper{
+  width: 80%;
+}
+.working_process_text{
+  font-family: 'Baloo Thambi 2', cursive;
+  margin-top: 1vw;
+  line-height: 1.2;
+  font-size: 1.7vw;
+  color: wheat;
+}
+.proces_heading{
+  font-family: 'Baloo Thambi 2', cursive;
+  font-size: 3vw;
+  font-weight: 700;
+  color: rgb(216, 7, 171);
+}
+.list{
+  margin: 0;
+  list-style-image: url(images/listitem.svg);
+}
+.list_item{
+  font-family: 'Baloo Thambi 2', cursive;
+  line-height: 1.5;
+  font-size: 1.7vw;
+  color: wheat;
+  position: relative;
+}
+#popupVid{
+  text-align: center;
+  padding-top: 4vw;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  background-color: rgba(0,0,0,.7);
+}
+.weather_button_close{
+  position: absolute;
+  right: 0;
+  top: 1vw;
+}
+.video{
+  width: 71.1vw;
+  height: 40vw;
+  box-shadow: 0 0 4vw rgba(216, 7, 171,.5);
+}
+.video_image_wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #1D1D24;
+  padding: 1vw 0;
+}
+.video_image{
+  display: block;
+  border-radius: 2vw;
+  width: 90vw;
+  box-shadow: 0 0 4vw rgb(0,0,0);
+}
+.weather_button_open{
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9vw;
+  height: 9vw;
+  border-radius: 100%;
+  background-color: #1D1D24;
+  box-shadow: 0 0 1vw rgb(0,0,0);
+  transition: transform .5s ease;
+}
+.weather_button_open:hover{
+  transform: scale(1.2);
+}
+.weather_button_open svg{
+  width: 65%;
+  height: 65%;
+  position: relative;
+  top: 20%;
+  left: 7%;
+}
+.website_development{
+  padding: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #1D1D24;
+}
+.website_development_image{
+  width: 30%;
+  display: block;
+  border-radius: 1vw;
+  box-shadow: 0 0 4vw rgb(0,0,0);
+  margin-right: 6vw;
+}
+.website_development_full_description{
+  width: 70%;
+}
+.website_development_text{
+  font-family: 'Baloo Thambi 2', cursive;
+  margin-top: 1vw;
+  line-height: 1.2;
+  font-size: 1.7vw;
+  color: wheat;
+  margin: 0;
+}
+@media only screen and (max-width: 991px){
+  .proces_heading{
+    font-size: 4vw;
+  }
+  .website_development_text{
+    font-size: 2.3vw;
+  }
+  .working_process_text{
+    font-size: 2.3vw;
+  }
+  .list_item{
+    font-size: 2.3vw;
+  }
+  .proces_list{
+    margin-left: 1.6vw;
+  }
+  .website_development{
+    padding: 5vw 2vw;
+  }
+  .weather_button_open{
+    width: 11vw;
+    height: 11vw;
+  }
+}
+@media only screen and (max-width: 767px){
+  .website_development_image{
+    width: 40%;
+  }
+  .website_development_image{
+    margin-right: 3vw;
+  }
+  .website_development_text{
+    font-size: 3vw;
+  }
+  .website_development{
+    padding-top: 8vw;
+  }
+  .video_image{
+    width: 96vw;
+  }
+  .video_image_wrapper{
+    padding: 4vw 0;
+  }
+  .working_process{
+    flex-wrap: wrap;
+  }
+  .working_process_wrapper{
+    width: 100%;
+  }
+  .working_process_text{
+    font-size: 3vw;
+  }
+  .list_item{
+    font-size: 3vw;
+  }
+  .proces_heading_wrapper{
+    margin-top: 4vw;
+  }
+  .proces_heading{
+    font-size: 4.3vw;
+  }
+  .proces_list{
+    margin-left: 2vw;
+  }
+  .working_process_text{
+    width: 96%;
+  }
+  .proces_heading_wrapper{
+    width: 96%;
+  }
+  .weather_button_open{
+    width: 13vw;
+    height: 13vw;
+  }
+}
+@media only screen and (max-width: 575px){
+  .website_development{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .website_development_image{
+    width: 90%;
+    margin-right: 0;
+  }
+  .website_development_full_description{
+    margin-top: 5vw;
+    width: 100%;
+  }
+  .proces_heading{
+    font-size: 6vw;
+  }
+  .website_development_text{
+    font-size: 4vw;
+  }
+  .working_process_text{
+    font-size: 4vw;
+  }
+  .list_item{
+    font-size: 4.5vw;
+  }
+  .weather_button_open{
+    width: 15vw;
+    height: 15vw;
+  }
+}

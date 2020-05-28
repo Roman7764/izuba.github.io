@@ -1,0 +1,443 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+button{
+  border: 0;
+  background-color: rgba(0,0,0,0);
+  padding: 0;
+}
+button:active, button:focus {
+  outline: none;
+}
+.portfolio_heading{
+  font-family: 'Baloo Thambi 2', cursive;
+  font-size: 3vw;
+  font-weight: 700;
+  color: rgb(216, 7, 171);   
+}
+.portfolio_full_heading{
+  background-color: #1D1D24;
+  padding: 5vw 12vw;
+}
+.portfolio_text{
+  font-family: 'Baloo Thambi 2', cursive;
+  line-height: 1.2;
+  font-size: 1.7vw;
+  color: wheat;
+}
+.portfolio_lists{
+  display: flex;
+}
+.portfolio_list_heading{
+  font-family: 'Baloo Thambi 2', cursive;
+  font-size: 2vw;
+  font-weight: 700;
+  color: rgb(216, 7, 171); 
+}
+.portfolio_item{
+  font-family: 'Baloo Thambi 2', cursive;
+  line-height: 1.2;
+  font-size: 1.7vw;
+  color: wheat;
+  position: relative;
+}
+.list{
+  margin: 0;
+  list-style-image: url(images/listitem.svg);
+}
+.portfolio_lists{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2vw;
+}
+.portfolio_list_wrapper{
+  width: 33.33%;
+}
+.social_wrapper{
+  display: flex;
+}
+.social{
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .6vw .4vw;
+  border-radius: 100%;
+  margin: 0 .4vw;
+  height: 4vw;
+  width: 4vw;
+  transition: transform .7s ease;
+}
+.social_image{
+  fill: wheat;
+  height: 100%;
+  width: 100%;
+  transition: fill .7s ease;
+}
+.social:hover{
+  transform: translateY(-.15vw);
+}
+.social:after{
+  content: "";
+  position: absolute;
+  bottom: -.10vw;
+  width: 0;
+  height: .18vw;
+  background: rgb(255, 0, 128);
+  transition: width .5s ease;
+  border-radius: 5vw;
+}
+.social:hover:after {
+  width: 60%;
+}
+.portfolio_images_wrapper1{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.portfolio_images_wrapper{
+  background-color: #1D1D24;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio_images{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  padding-bottom: 5vw;
+  border-radius:0 0 5vw 5vw;
+  background-color: #0D0D14;
+  border: .5vw solid #0D0D14;
+}
+.portfolio_image{
+  display: block;
+  width: 100%;
+}
+.portfolio_image2{
+  width: 50%;
+}
+.portfolio_image5{
+  width: 50%;
+}
+.portfolio_image3{
+  width: 38.8%;
+}
+.portfolio_image4{
+  width: 100%;
+}
+.image_wrapper1{
+  width: 61.2%;
+}
+.image_wrapper1_1{
+  display: flex;
+  align-items: stretch;
+}
+.portfolio_images_wrapper2{
+  display: flex;
+  width: 100%;
+}
+.more_projects{
+  display: flex;
+  justify-content: center;
+  padding: 5vw 0;
+  background-color: #1D1D24;
+}
+.more_projects_wrapper{
+  width: 80%;
+}
+.cards{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4vw;
+}
+.card{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card_wrapper{
+  width: 100%;
+}
+.card_image{
+  width: 100%;
+}
+.card_description{
+  font-family: 'Baloo Thambi 2', cursive;
+  line-height: 1.2;
+  font-size: 1.3vw;
+  color: wheat;
+}
+.card_heading{
+  font-family: 'Baloo Thambi 2', cursive;
+  line-height: 1.2;
+  font-size: 2vw;
+  color: rgb(216, 7, 171);
+  font-weight: 700;
+  transition: color .5s ease;
+}
+.card_heading:hover{
+  color: rgb(255, 0, 128);
+}
+.card_image_wrapper{
+  width: 100%;
+  display: block;
+}
+#popupVid{
+  text-align: center;
+  padding-top: 4vw;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  background-color: rgba(0,0,0,.7);
+}
+.weather_button_close{
+  position: absolute;
+  right: 0;
+  top: 1vw;
+}
+.video{
+  width: 71.1vw;
+  height: 40vw;
+  box-shadow: 0 0 4vw rgba(216, 7, 171,.5);
+}
+.video_image_wrapper{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.video_image{
+  display: block;
+}
+.weather_button_open{
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 100%;
+  background-color: #1D1D24;
+  box-shadow: 0 0 1vw rgb(0,0,0);
+  transition: transform .5s ease;
+  margin: .7vw;
+}
+.weather_button_open:hover{
+  transform: scale(1.1);
+}
+.weather_button_open svg{
+  width: 65%;
+  height: 65%;
+  position: relative;
+  top: 20%;
+  left: 7%;
+}
+.cards{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4vw;
+}
+.card{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card_wrapper{
+  width: 100%;
+}
+.card_image{
+  width: 100%;
+}
+.card_description{
+  font-family: 'Baloo Thambi 2', cursive;
+  line-height: 1.2;
+  font-size: 1.3vw;
+  color: wheat;
+}
+.card_heading{
+  font-family: 'Baloo Thambi 2', cursive;
+  line-height: 1.2;
+  font-size: 2vw;
+  color: rgb(216, 7, 171);
+  font-weight: 700;
+  transition: color .5s ease;
+}
+.card_heading:hover{
+  color: rgb(255, 0, 128);
+}
+.card_image_wrapper{
+  width: 100%;
+  display: block;
+}
+.choice_buttons{
+  display: flex;
+  justify-content: center;
+  padding: 1.5vw 0 1.5vw;
+  background-color: #0D0D14;
+  width: 80%;
+  border-radius: 100vw 100vw 0 0;
+}
+.choice_button{
+  background-color: rgba(0,0,0,0);
+  border: 0;
+  font-family: 'Baloo Thambi 2', cursive;
+  line-height: 1.2;
+  font-size: 2vw;
+  color: wheat;
+  font-weight: 600;
+  transition: all .5s ease;
+
+}
+.choice_wrapper{
+  margin: 0 2vw;
+}
+@media only screen and (max-width: 991px){
+  .portfolio_heading{
+    font-size: 3.3vw;
+  }
+  .portfolio_text{
+    font-size: 2.3vw;
+  }
+  .portfolio_list_wrapper{
+    width: 50%;
+  }
+  .portfolio_list_heading{
+    font-size: 2.8vw;
+  }
+  .portfolio_item{
+    font-size: 2.3vw;
+  }
+  .portfolio_item:before{
+    top: 1.3vw;
+    width: 1vw;
+    height: 1.1vw;
+  }
+  .portfolio_list{
+    margin-left: 1.6vw;
+  }
+  .social{
+    width: 5vw;
+    height: 5vw;
+  }
+  .cards{
+    flex-wrap: wrap;
+  }
+  .card{
+    width: 45%;
+  }
+  .card:last-child{
+    margin-top: 4vw;
+  }
+  .card_heading{
+    font-size: 3.2vw;
+  }
+  .card_description{
+    font-size: 2.1vw;
+  }
+  .choice_button{
+    font-size: 4vw;
+  }
+  .weather_button_open{
+    width: 7vw;
+    height: 7vw;
+  }
+}
+@media only screen and (max-width: 767px){
+  .portfolio_item:before{
+    top: 1.4vw;
+    left: -2vw;
+    width: 1.15vw;
+    height: 1.2vw;
+  }
+  .portfolio_list{
+    margin-left: 2vw;
+  }
+  .portfolio_full_heading{
+    padding: 5vw 2vw;
+  }
+  .portfolio_heading{
+    font-size: 4.5vw;
+  }
+  .portfolio_text{
+    font-size: 3vw;
+  }
+  .portfolio_list_heading{
+    font-size: 4vw;
+  }
+  .portfolio_item{
+    font-size: 3.5vw;
+  }
+  .social{
+    width: 7vw;
+    height: 7vw;
+  }
+  .portfolio_images{
+    width: 96%;
+  }
+  .more_projects_wrapper{
+    width: 96%;
+  }
+  .card_heading{
+    font-size: 4vw;
+  }
+  .card_description{
+    font-size: 3vw;
+  }
+  .cards{
+    margin-top: 6vw;
+  }
+  .card:last-child{
+    margin-top: 6vw;
+  }
+  .choice_button{
+    font-size: 5vw;
+  }
+  .weather_button_open{
+    width: 8vw;
+    height: 8vw;
+  }
+  .choice_buttons{
+    width: 96%;
+  }
+}
+@media only screen and (max-width: 575px){
+  .portfolio_heading{
+    font-size: 6vw;
+  }
+  .portfolio_text{
+    font-size: 4.5vw;
+  }
+  .portfolio_list_heading{
+    font-size: 5.5vw;
+  }
+  .portfolio_item{
+    font-size: 4.5vw;
+  }
+  .social{
+    width: 9vw;
+    height: 9vw;
+  }
+  .cards{
+    justify-content: center;
+  }
+  .card{
+    width: 80%;
+    margin-top: 6vw;
+  }
+  .card_heading{
+    font-size: 6vw;
+  }
+  .card_description{
+    font-size: 4.5vw;
+  }
+}

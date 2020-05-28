@@ -1,0 +1,302 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.main_wrapper{
+  background-color: #1D1D24;
+}
+.text_wrapper{
+  padding: 0 7.8vw;
+}
+.text{
+  font-family: 'Baloo Thambi 2', cursive;
+  line-height: 1.2;
+  font-size: 1.7vw;
+  color: wheat;
+  padding: 4vw 0;
+}
+.quote{
+  font-size: 2.5vw;
+  color: wheat;
+  font-family: 'Dancing Script', cursive;
+  margin: 0 6vw;
+  text-align: center;
+}
+.image1{
+  width: 95vw;
+  display: block;
+  border-radius: 2vw;
+  box-shadow: 0 0 1vw rgb(0,0,0);
+}
+.image_wrapper1{
+  display: flex;
+  justify-content: center;
+  padding-top: 4vw;
+}
+.container{
+  padding: 0 7.8vw;
+  display: flex;
+  align-items: flex-start;
+}
+.list_wrapper{
+  width: 60%;
+  padding-left: 2vw;
+}
+.image2{
+  width: 100%;
+}
+.image2{
+  border-radius: 1vw;
+}
+.list_heading{
+  font-family: 'Baloo Thambi 2', cursive;
+  line-height: 1;
+  font-size: 3.2vw;
+  font-weight: 700;
+  color: rgb(216, 7, 171);
+}
+.list{
+  margin: .5vw 0 2vw;
+  padding-left: 1.5vw;
+  list-style-image: url(images/listitem.svg);
+}
+.list_item{
+  font-family: 'Baloo Thambi 2', cursive;
+  line-height: 1.2;
+  font-size: 1.7vw;
+  color: wheat;
+  margin: .7vw 0;
+}
+.list_text{
+  font-family: 'Baloo Thambi 2', cursive;
+  line-height: 1.2;
+  font-size: 1.7vw;
+  color: wheat;
+  margin-bottom: 2vw;
+}
+#popupVid{
+  text-align: center;
+  padding-top: 4vw;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  background-color: rgba(0,0,0,.7);
+}
+.weather_button_close{
+  position: absolute;
+  right: 0;
+  top: 1vw;
+}
+.video{
+  width: 71.1vw;
+  height: 40vw;
+  box-shadow: 0 0 4vw rgba(216, 7, 171,.5);
+}
+.video_image_wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #1D1D24;
+  width: 40%;
+}
+.video_image{
+  display: block;
+  border-radius: 1vw;
+  width: 100%;
+  box-shadow: 0 0 4vw rgb(0,0,0);
+}
+.weather_button_open{
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9vw;
+  height: 9vw;
+  border-radius: 100%;
+  background-color: #1D1D24;
+  box-shadow: 0 0 1vw rgb(0,0,0);
+  transition: transform .5s ease;
+}
+.weather_button_open:hover{
+  transform: scale(1.2);
+}
+.weather_button_open svg{
+  width: 65%;
+  height: 65%;
+  position: relative;
+  top: 20%;
+  left: 7%;
+}
+.container2{
+  padding: 0 7.8vw;
+  display: flex;
+  align-items: center;
+}
+.image_wrapper3{
+  width: 45%;
+}
+.text_wrapper2{
+  width: 55%;
+  padding-right: 5vw;
+}
+.image3{
+  width: 100%;
+  border-radius: 1vw;
+  box-shadow: 0 0 1vw rgb(0,0,0);
+}
+.image_text{
+  font-family: 'Baloo Thambi 2', cursive;
+  line-height: 1.2;
+  font-size: 1.5vw;
+  color: #A39C8F;
+  text-align: center;
+}
+@media only screen and (max-width: 991px){
+  .text{
+    font-size: 2.2vw;
+  }
+  .quote{
+    font-size: 3.5vw;
+  }
+  .list{
+    padding-left: 2.1vw;
+  }
+  .list_item{
+    font-size: 2.2vw;
+  }
+  .list_text{
+    font-size: 2.2vw;
+  }
+  .list_heading{
+    font-size: 3.5vw;
+  }
+  .container{
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+  .container2{
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+  .image3{
+    border-radius: 2vw;
+  }
+  .image_text{
+    font-size: 2.2vw;
+  }
+}
+@media only screen and (max-width: 767px){
+  .text{
+    font-size: 3.2vw;
+  }
+  .text_wrapper{
+    padding: 0 2vw;
+  }
+  .quote{
+    font-size: 4.5vw;
+  }
+  .list_wrapper{
+    padding: 0;
+    margin-top: 5vw;
+    width: 100%;
+  }
+  .list_item{
+    font-size: 3vw;
+  }
+  .list_text{
+    font-size: 3.2vw;
+  }
+  .list_heading{
+    font-size: 5vw;
+  }
+  .video_image_wrapper{
+    width: 70%;
+  }
+  .video_image{
+    border-radius: 4vw;
+  }
+  .weather_button_open{
+    width: 15vw;
+    height: 15vw;
+  }
+  .container{
+    padding-left: 2vw;
+    padding-right: 2vw;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .list{
+    padding-left: 2.5vw;
+  }
+  .container2{
+    padding-left: 2vw;
+    padding-right: 2vw;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .text_wrapper2{
+    width: 100%;
+  }
+  .image_wrapper3{
+    width: 70%;
+  }
+  .image3{
+    border-radius: 3vw;
+  }
+  .image_text{
+    font-size: 3.2vw;
+  }
+}
+@media only screen and (max-width: 575px){
+  .text{
+    font-size: 4.5vw;
+    padding: 8vw 0;
+  }
+  .quote{
+    font-size: 6vw;
+    padding-bottom: 8vw;
+  }
+  .list_item{
+    font-size: 5vw;
+  }
+  .list_text{
+    font-size: 4.5vw;
+    padding: 5vw 0;
+  }
+  .list_heading{
+    font-size: 7vw;
+  }
+  .video_image_wrapper{
+    width: 80%;
+  }
+  .video_image{
+    border-radius: 5vw;
+  }
+  .weather_button_open{
+    width: 20vw;
+    height: 20vw;
+  }
+  .list{
+    padding-left: 5vw;
+  }
+  .text_wrapper2{
+    width: 100%;
+  }
+  .image_wrapper3{
+    margin-top: 6vw;
+    width: 96%;
+  }
+  .image3{
+    border-radius: 5vw;
+  }
+  .image_text{
+    font-size: 4.5vw;
+  }
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>izuba news</title>
+    <link rel="shortcut icon" href="images/izuba.png">
+    <link rel="stylesheet" href="css/header style.css">
+    <link rel="stylesheet" href="css/news style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#" class="logo_link">
+                <img src="images/izuba.png" alt="izuba" class="izuba_picture">
+                <div class="izuba">izuba</div>
+            </a>
+        </div>
+        <div class="header_links_wrapper">
+            <ul class="header_links">
+                <li><a class="header_link" href="index.html">HOME</a></li>
+            </ul>
+            <button onclick="clickCounter()" href="#" class="weather_button">
+                <svg viewBox="0 0 58 58" xmlns="http://www.w3.org/2000/svg"><g id="Page-1" fill="none" fill-rule="evenodd"><g id="001---Day-and-Night" fill="rgb(245,222,179)" fill-rule="nonzero"><path id="Shape" d="m42.6 5.963c.9949012 3.12463014 1.4646094 6.3926505 1.39 9.671-.2401517 13.8466802-9.9573733 25.7163881-23.484 28.686-4.5068238.9642374-9.1726878.9037483-13.653-.177-.19614176-.0517952-.40413891.020057-.52648865.1818744s-.13479877.3815231-.03151135.5561256c5.2815495 8.4680458 14.6885639 13.4648785 24.662 13.1 12.6372351-.4315788 23.4170709-9.2792765 26.3045107-21.5897867 2.8874397-12.3105103-2.8341187-25.0286227-13.9615107-31.0342133-.1811724-.09198068-.3999908-.0651782-.5536074.06780988-.1536166.13298809-.2114796.34571267-.1463926.53819012zm7.807 11.406c-.2921586-.469442-.148442-1.0868414.321-1.379s1.0868414-.148442 1.379.321c.6538162 1.0536541 1.2312948 2.1528018 1.728 3.289.152151.328281.1151013.713146-.0968801 1.0063732s-.5658256.4490734-.9252578.4075179c-.3594321-.0415554-.668381-.2740298-.8078621-.6078911-.458251-1.0490401-.9909433-2.0639626-1.594-3.037zm3.527 23.011c-.2082114.5116918-.7918082.7577113-1.3035.5494999-.5116918-.2082113-.7577113-.7918081-.5495-1.3034999 1.8937816-4.5612094 2.3911168-9.5818931 1.429-14.426-.0714531-.3501203.0493084-.7117646.3167949-.9487049.2674865-.2369404.6410604-.31318.98-.2.3389396.1131799.591752.3985846.6632051.7487049 1.041245 5.2308955.5066769 10.6531419-1.536 15.58z"/><path id="Shape" d="m19 28c4.9705627 0 9-4.0294373 9-9s-4.0294373-9-9-9-9 4.0294373-9 9c.006061 4.9680501 4.0319499 8.993939 9 9zm0-16c.5522847 0 1 .4477153 1 1s-.4477153 1-1 1c-2.7600532.0033061-4.9966939 2.2399468-5 5 0 .5522847-.4477153 1-1 1s-1-.4477153-1-1c.0044086-3.8641657 3.1358343-6.9955914 7-7z"/><path id="Shape" d="m19 6c.5522847 0 1-.44771525 1-1v-4c0-.55228475-.4477153-1-1-1s-1 .44771525-1 1v4c0 .55228475.4477153 1 1 1z"/><path id="Shape" d="m18 33v4c0 .5522847.4477153 1 1 1s1-.4477153 1-1v-4c0-.5522847-.4477153-1-1-1s-1 .4477153-1 1z"/><path id="Shape" d="m32 19c0 .5522847.4477153 1 1 1h4c.5522847 0 1-.4477153 1-1s-.4477153-1-1-1h-4c-.5522847 0-1 .4477153-1 1z"/><path id="Shape" d="m6 19c0-.5522847-.44771525-1-1-1h-4c-.55228475 0-1 .4477153-1 1s.44771525 1 1 1h4c.55228475 0 1-.4477153 1-1z"/><path id="Shape" d="m8.394 9.808c.39237889.3789722 1.01608478.3735524 1.40181858-.01218142.38573382-.3857338.39115362-1.00943969.01218142-1.40181858l-2.829-2.829c-.39237889-.37897221-1.01608478-.37355237-1.40181858.01218142-.38573379.3857338-.39115363 1.00943969-.01218142 1.40181858z"/><path id="Shape" d="m28.192 28.192c-.3903819.3904999-.3903819 1.0235001 0 1.414l2.829 2.829c.3923789.3789722 1.0160848.3735524 1.4018186-.0121814s.3911536-1.0094397.0121814-1.4018186l-2.829-2.829c-.3904999-.3903819-1.0235001-.3903819-1.414 0z"/><path id="Shape" d="m28.9 10.1c.2651948-.0000566.5195073-.10545063.707-.293l2.829-2.829c.2599566-.25107447.3642126-.62287789.2726972-.97250732-.0915155-.34962944-.3645604-.6226744-.7141899-.71418984-.3496294-.09151544-.7214328.01274058-.9725073.27269716l-2.83 2.83c-.2853222.28621606-.3703185.71603682-.2154088 1.08930798.1549097.37327117.5192697.61660642.9234088.61669202z"/><path id="Shape" d="m6.979 32.435 2.829-2.829c.3789722-.3923789.3735524-1.0160848-.01218142-1.4018186-.3857338-.3857338-1.00943969-.3911536-1.40181858-.0121814l-2.829 2.829c-.25995658.2510745-.3642126.6228779-.27269716.9725073.09151544.3496295.3645604.6226744.71418984.7141899.34962943.0915154.72143285-.0127406.97250732-.2726972z"/></g></g></svg>
+            </button>
+        </div>
+    </header>
+    <div class="preloader">
+        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"></path></svg>
+    </div>
+    <div class="service background_dark">NEWS</div>
+    <div class="main_wrapper background_grey">
+        <div class="text_wrapper">
+            <div class="text color_balck">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequatur laborum ducimus quas et illo recusandae illum. Maxime quos odio earum nesciunt delectus velit reiciendis facilis laudantium officia blanditiis, neque optio mollitia sed beatae minima culpa magnam quis cumque, aliquid illo provident voluptate corporis. Tempore quisquam consectetur deleniti quaerat. Quisquam corporis dolore soluta sunt natus, minima repudiandae itaque possimus cum modi a, veritatis amet perferendis asperiores tempora quae, incidunt velit.</div>
+            <div class="quote color_balck">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, exercitationem ut obcaecati delectus quasi neque numquam! Omnis sequi soluta atque necessitatibus dignissimos. Exercitationem, voluptatem. Facere.</div>
+        </div>
+        <div class="image_wrapper1">
+            <img class="image1" src="images/newsimg1.jpg" alt="news">
+        </div>
+        <div class="text_wrapper">
+            <div class="text color_balck">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ad dolorem aspernatur ea. Provident natus soluta voluptate recusandae ratione, rerum cupiditate quidem dignissimos quae id accusamus sint error sit dolore non esse. Dicta, praesentium cumque tenetur cupiditate exercitationem sapiente libero aliquid aspernatur natus, magni perspiciatis impedit error quasi assumenda placeat iure et eligendi sed ea aut. Iusto, soluta sint. Explicabo, officiis sed ab incidunt ex nam maiores totam eaque porro quo animi, excepturi tempora. Itaque culpa consequatur laudantium adipisci nihil!</div>
+        </div>
+        <div class="container">
+            <div class="video_image_wrapper background_grey">
+                <img src="images/newsimg2.jpg" alt="video" class="video_image">
+                <button onClick="toggleVideo();" class="weather_button weather_button_open">
+                    <svg fill="rgb(216, 7, 171)" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="163.861px" height="163.861px" viewBox="0 0 163.861 163.861" style="enable-background:new 0 0 163.861 163.861;" xml:space="preserve"><g><path d="M34.857,3.613C20.084-4.861,8.107,2.081,8.107,19.106v125.637c0,17.042,11.977,23.975,26.75,15.509L144.67,97.275c14.778-8.477,14.778-22.211,0-30.686L34.857,3.613z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                </button>
+            </div>
+            <div id="popupVid" style="display:none;">
+                <button onClick="toggleVideo('block');" class="weather_button weather_button_close">
+                    <svg fill="rgb(216, 7, 171)" height="365.696pt" viewBox="0 0 365.696 365.696" width="365.696pt" xmlns="http://www.w3.org/2000/svg"><path d="m243.1875 182.859375 113.132812-113.132813c12.5-12.5 12.5-32.765624 0-45.246093l-15.082031-15.082031c-12.503906-12.503907-32.769531-12.503907-45.25 0l-113.128906 113.128906-113.132813-113.152344c-12.5-12.5-32.765624-12.5-45.246093 0l-15.105469 15.082031c-12.5 12.503907-12.5 32.769531 0 45.25l113.152344 113.152344-113.128906 113.128906c-12.503907 12.503907-12.503907 32.769531 0 45.25l15.082031 15.082031c12.5 12.5 32.765625 12.5 45.246093 0l113.132813-113.132812 113.128906 113.132812c12.503907 12.5 32.769531 12.5 45.25 0l15.082031-15.082031c12.5-12.503906 12.5-32.769531 0-45.25zm0 0"/></svg>
+                </button>
+                <iframe class="video" src="https://www.youtube.com/embed/7X8II6J-6mU?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="list_wrapper">
+                <div class="list_heading">LIST</div>
+                <ul class="list">
+                    <li class="list_item color_balck">Ipsa placeat fugit cumque cum!</li>
+                    <li class="list_item color_balck">Enim dolorem sit perspiciatis pariatur.</li>
+                    <li class="list_item color_balck">Lorem ipsum dolor sit amet consectetur</li>
+                    <li class="list_item color_balck">perferendis possimus deleniti labore.</li>
+                </ul>
+                <div class="list_text color_balck">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque nostrum, nobis illo corporis dolor commodi odio eos, voluptate facere officia molestiae adipisci atque ipsum soluta architecto? Itaque porro nesciunt, quisquam magni, totam recusandae velit fugit accusamus esse perferendis ducimus error?</div>
+                <div class="list_heading">LIST</div>
+                <ul class="list">
+                    <li class="list_item color_balck">Unde cupiditate sunt eligendi aliquid voluptas</li>
+                    <li class="list_item color_balck">Error dolor laudantium, eum, porro temporibus quis</li>
+                    <li class="list_item color_balck">Explicabo mollitia animi omnis adipisci ab fugit.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text_wrapper">
+            <div class="text color_balck">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum at, deserunt, numquam aut molestias nam eligendi quaerat recusandae praesentium minus eius. Ullam voluptates repudiandae perspiciatis fuga impedit officia iste in quam voluptas nostrum esse nihil illo eum, accusamus, sint magnam? Dolorem quaerat velit eos illum ab sapiente quos, omnis enim? Laudantium consequuntur maiores laborum, officiis nulla dolor distinctio neque. Nisi!</div>
+        </div>
+        <div class="container2">
+            <div class="text_wrapper2">
+                <div class="list_heading">NEWS</div>
+                <div class="list_text color_balck">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam maiores ducimus repudiandae quidem aspernatur soluta dolores porro aperiam quo molestiae magnam natus ratione dolore autem tempore accusamus, eveniet ipsa itaque consequatur aut vitae quod culpa. Natus, distinctio. Expedita magni dicta, omnis neque voluptatem ex esse sequi! Exercitationem ipsam nihil ducimus?</div>
+            </div>
+            <div class="image_wrapper3">
+                <img class="image3" src="images/newsimg3.jpg" alt="news">
+                <div class="image_text color_turbid">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+        </div>
+        <div class="text_wrapper">
+            <div class="text color_balck">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, molestiae sit. Blanditiis at repudiandae repellat ipsa debitis inventore sunt, dolorum recusandae corrupti accusantium eum commodi autem vero illum perferendis ullam, ut doloremque itaque eos nam quam natus sequi. Nam, laborum labore optio error nesciunt repudiandae perferendis, libero earum dicta similique aut, soluta culpa. Magnam corrupti, aperiam dolorem ipsa consequuntur in magni cumque accusamus quae qui consectetur veritatis modi atque. Repellat.</div>
+        </div>
+    </div>
+    <footer class="background_dark">
+        <div class="footer_wrapper">
+            <div class="footer_department">
+                <div class="logo">
+                    <a href="#" class="logo_link">
+                        <img src="images/izuba.png" alt="izuba" class="izuba_picture">
+                        <div class="izuba">izuba</div>
+                    </a>
+                </div>
+                <div class="footer_izuba_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi asperiores voluptatum facilis enim suscipit beatae laborum id amet veritatis velit!</div>
+                <div class="our_contacts_wrapper">
+                    <div class="contacts_wrapper">
+                        <div class="our_contacts">OUR CONTACTS</div>
+                        <div class="footer_contacts"><a class="footer_contacts_link" href="tel:+380 45 342 83 56">045 342 83 56</a></div>
+                        <div class="footer_contacts"><a class="footer_contacts_link" href="tel:+380 67 342 63 26">067 342 63 26</a></div>
+                    </div>
+                    <div class="contacts_wrapper">
+                        <div class="our_contacts">OUR EMAILS</div>
+                        <div class="footer_contacts"><a class="footer_contacts_link" href="mailto:abc@gmail.com">abc@gmail.com</a></div>
+                        <div class="footer_contacts"><a class="footer_contacts_link" href="mailto:abc@gmail.com">qwer@gmail.com</a></div>
+                    </div>
+                </div>
+                <div class="more_about_us">
+                    <div class="footer_social_networks">
+                        <div class="footer_contact_heading">OUR SOCIAL NETWORKS</div>
+                        <div class="footer_social_wrapper">
+                            <a href="#" class="footer_social">
+                                <svg class="footer_social_image" viewBox="0 0 511 511.9" xmlns="http://www.w3.org/2000/svg"><path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/><path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/></svg>
+                            </a>
+                            <a href="#" class="footer_social">
+                                <svg class="footer_social_image" id="Bold" enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
+                            </a>
+                            <a href="#" class="footer_social">
+                                <svg class="footer_social_image" viewBox="-21 -81 681.33464 681" xmlns="http://www.w3.org/2000/svg"><path d="m200.964844 515.292969c241.050781 0 372.871094-199.703125 372.871094-372.871094 0-5.671875-.117188-11.320313-.371094-16.9375 25.585937-18.5 47.824218-41.585937 65.371094-67.863281-23.480469 10.441406-48.753907 17.460937-75.257813 20.636718 27.054687-16.230468 47.828125-41.894531 57.625-72.488281-25.320313 15.011719-53.363281 25.917969-83.214844 31.808594-23.914062-25.472656-57.964843-41.402344-95.664062-41.402344-72.367188 0-131.058594 58.6875-131.058594 131.03125 0 10.289063 1.152344 20.289063 3.398437 29.882813-108.917968-5.480469-205.503906-57.625-270.132812-136.921875-11.25 19.363281-17.742188 41.863281-17.742188 65.871093 0 45.460938 23.136719 85.605469 58.316407 109.082032-21.5-.660156-41.695313-6.5625-59.351563-16.386719-.019531.550781-.019531 1.085937-.019531 1.671875 0 63.46875 45.171875 116.460938 105.144531 128.46875-11.015625 2.996094-22.605468 4.609375-34.558594 4.609375-8.429687 0-16.648437-.828125-24.632812-2.363281 16.683594 52.070312 65.066406 89.960937 122.425781 91.023437-44.855469 35.15625-101.359375 56.097657-162.769531 56.097657-10.5625 0-21.003906-.605469-31.2617188-1.816407 57.9999998 37.175781 126.8710938 58.871094 200.8867188 58.871094"/></svg>
+                            </a>
+                            <a href="#" class="footer_social">
+                                <svg class="footer_social_image" viewBox="-62 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m60.945312 278.21875c.640626-1.597656 7.050782-26.230469 7.5-27.898438-10.007812-15.058593-21.125-64.371093-12.597656-104.398437 9.199219-58.730469 71.4375-87.601563 130.199219-87.601563v-.109374c73.570313.046874 128.640625 40.980468 128.699219 111.476562.046875 55.179688-33.195313 128.117188-89.957032 128.117188-.015624 0-.027343 0-.042968 0-20.257813 0-45.90625-9.1875-52.632813-18.210938-7.761719-10.398438-9.667969-23.230469-5.566406-36.941406 10.050781-32.082032 22.867187-70.511719 24.363281-96.136719 1.386719-24.183594-15.773437-39.917969-38.027344-39.917969-16.746093 0-38.496093 9.726563-49.335937 37.058594-8.953125 22.707031-8.761719 46.480469.585937 72.671875 3.644532 10.238281-16.15625 76.984375-22.5 98.71875-15.761718 53.992187-37.339843 122.304687-32.726562 160.347656l4.453125 36.605469 22.367187-29.3125c30.953126-40.519531 62.957032-145.332031 71.484376-170.835938 25.210937 32.648438 77.710937 33.585938 83.832031 33.585938 75.183593 0 160.4375-74.65625 158.019531-178.5625-2.121094-91.121094-68.808594-166.875-188.632812-166.875v.117188c-113.976563 0-180.5 60.835937-196.785157 137.703124-14.914062 71.273438 18.253907 125.519532 57.300781 140.398438zm0 0"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_department2">
+                <div class="footer_contact_wrapper">
+                    <div class="footer_contact_us_wrapper">
+                        <div class="footer_contact_heading">CONTACT US</div>
+                        <div class="footer_izuba_description">Lorem ipsum dolor sit amet.</div>
+                        <div class="footer_textarea_full">
+                            <div class="footer_textarea_wrapper">
+                                <input class="footer_contact" placeholder="your name*">
+                                <input class="footer_contact" type="email" placeholder="your email*">
+                                <input class="footer_contact" placeholder="subject">
+                            </div>
+                            <div class="footer_textarea_wrapper">
+                                <textarea class="footer_contact footer_textarea" name="comment" placeholder="write your message"></textarea>
+                            </div>
+                        </div>
+                        <div class="contact_button_wrapper">
+                            <button class="contact_button">CONTACT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="js/colors.js"></script>
+</body>
+</html>
